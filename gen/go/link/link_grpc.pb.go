@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v4.25.1
-// source: sso/sso.proto
+// source: link/link.proto
 
 package link
 
@@ -155,5 +155,5 @@ var Link_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "sso/sso.proto",
+	Metadata: "link/link.proto",
 }
