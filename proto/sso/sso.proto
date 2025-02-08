@@ -1,0 +1,28 @@
+syntax = "proto 3";
+
+package link;
+
+option go_package = "ozon_link_shorter/gen/go/link";
+
+service Link {
+    rpc GetOriginalLink (GetOriginalLinkRequest) returns (GetOriginalLinkResponse);
+    rpc CreateShorterLink (CreateShorterLinkRequest) returns (CreateShorterLinkResponse);
+}
+
+message GetOriginalLinkRequest {
+    string shorterLink = 1;
+    int32 app_id = 2;
+}
+
+message GetOriginalLinkResponse {
+    string originalLink = 1;
+}
+
+message CreateShorterLinkRequest {
+    string originalLink = 1;
+    int32 app_id = 2;
+}
+
+message CreateShorterLinkResponse {
+    string shorterLink = 1;
+}
