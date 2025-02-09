@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package link;
 
-option go_package = "ozon_link_shorter/gen/go/link";
+option go_package = "github.com/Maksim646/protos/gen/go/link";
 
 service Link {
     rpc GetOriginalLink (GetOriginalLinkRequest) returns (GetOriginalLinkResponse);
